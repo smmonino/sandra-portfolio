@@ -11,7 +11,7 @@ export class ProyectosService {
       {
         id: 1,
         name: 'Labyrinthus',
-        desc: 'Laberinto por niveles y ranking con puntuación. Escapa del laberinto del castillo y alcanza el ranking',
+        desc: 'Este proyecto es un videojuego desarrollado en Java utilizando JavaFX para la interfaz gráfica, implementando la arquitectura Modelo-Vista-Controlador (MVC). La principal particularidad de la aplicación es que la disposición visual del juego se genera dinámicamente a partir de un archivo .txt, lo que permite crear escenarios o niveles de manera flexible y sencilla. La presentación visual se complementa mediante CSS para mejorar la apariencia de los elementos gráficos y menús. La aplicación gestiona la lógica del juego, la interacción con el usuario y ofrece distintos retos o niveles, todo dentro de una estructura modular, moderna y fácilmente escalable.',
         img: 'assets/images/labirinthus.png',
         techs: [
             'Java' ,
@@ -24,7 +24,7 @@ export class ProyectosService {
       {
         id: 2,
         name: 'La Batalla de los V Pueblos',
-        desc: 'Videojuego web de combate por turnos.',
+        desc: 'Este proyecto es un videojuego por turnos con una temática inspirada en mundos de fantasía épica, desarrollado para ejecutarse en navegadores web utilizando JavaScript, HTML y CSS. El juego cuenta con niveles progresivos, personajes con estadísticas personalizables, tiendas donde adquirir armas y mejoras, así como un sistema de combate estratégico por turnos. Incluye además efectos de sonido y música ambiental que acompañan la experiencia, logrando una atmósfera inmersiva y dinámica. Gracias al uso de tecnologías web, la aplicación ofrece una interfaz moderna, animaciones atractivas y compatibilidad multiplataforma.',
         img: 'assets/images/batalla_web.png',
        techs: [
          'HTML' ,
