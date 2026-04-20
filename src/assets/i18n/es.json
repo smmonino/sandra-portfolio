@@ -1,0 +1,106 @@
+{
+    "navbar": {
+      "bienvenida": "Bienvenido , {{ user }}",
+      "inicio": "Inicio",
+      "proyectos": "Proyectos",
+      "contacto": "Contacto",
+      "panel": "Panel"
+    },
+    "footer": {
+      "copyright": "2025 Sandra María Moñino García. Todos los derechos reservados."
+    },
+    "modal": {
+      "bienvenida": "BIENVENIDO",
+      "antes_continuar": "Antes de continuar...",
+      "quien_visita": "Déjame saber quién me visita.",
+      "nombre": "Nombre",
+      "nombre_placeholder": "Tu nombre",
+      "password": "Password",
+      "password_placeholder": "********",
+      "entrar": "Entrar",
+      "privacidad": "Tu información no será compartida con nadie."
+    },
+    "home": {
+      "nombre_persona": "Sandra María Moñino García",
+      "titulo": "Fullstack Developer",
+      "descripcion": "Especializado en arquitecturas modernas, interfaces expresivas y código que escala. De la idea al deploy.",
+      "ver_proyectos": "Ver proyectos",
+      "hablemos": "Hablemos",
+      "badge_sobre_mi": "Sobre mí",
+      "quien_soy": "¿Quién soy?",
+      "desc_sobre_mi": "Soy desarrolladora fullstack con experiencia construyendo productos web completos. Me mueve resolver problemas reales con tecnología limpia y bien pensada. Trabajo cómoda tanto en backend como en frontend, y disfruto especialmente la intersección entre los dos: arquitectura de APIs, rendimiento y UX.",
+      "soft_skills": "Soft Skills",
+      "trabajo_equipo": "Trabajo en equipo",
+      "aprendizaje_rapido": "Aprendizaje rápido",
+      "persistente": "Persistente",
+      "orientada_resultados": "Orientada a resultados",
+      "tecnologias": "Tecnologías",
+      "badge_trayectoria": "Trayectoria",
+      "experiencia_estudios": "Experiencia & Estudios",
+      "trabajo": "Trabajo",
+      "presente": "2024 – Presente",
+      "dev_junior": "Desarrolladora Fullstack Junior",
+      "empresa_xyz": "Empresa XYZ · Badajoz",
+      "desc_junior": "Desarrollo de módulos en Odoo, APIs REST con Spring Boot y dashboards Angular. Mantenimiento e integración con PostgreSQL.",
+      "practicas": "Prácticas",
+      "anio_practicas": "2023",
+      "desarrollo_aplicaciones": "Desarrollo de aplicaciones",
+      "startup_abc": "Startup ABC · Remoto",
+      "desc_practicas": "Creación de la app KultuX (Flutter + Spring Boot + PostgreSQL). Diseño de la arquitectura y primera versión pública.",
+      "estudios": "Estudios",
+      "estudios_2022_2024": "2022 – 2024",
+      "titulo_cfgs": "CFGS Desarrollo de Aplicaciones Multiplataforma",
+      "ies_badajoz": "IES · Badajoz",
+      "desc_cfgs": "Especialización en desarrollo móvil, web y escritorio. Proyecto final KultuX, premiado como mejor proyecto de promoción.",
+      "estudios_2020_2022": "2020 – 2022",
+      "titulo_cfgm": "CFGM Sistemas Microinformáticos y Redes",
+      "desc_cfgm": "Fundamentos de redes, administración de sistemas y primeros pasos en programación.",
+      "badge_proyectos": "Proyectos",
+      "lo_construido": "Lo que he construido",
+	  "actualidad": "Present",
+	  "hibrido": "Híbrido",
+	  "mes": "mes",
+	  "remoto": "Remoto"
+    },
+    "proyectos": {
+      "todos_proyectos": "Todos mis proyectos",
+      "filtrar": "Filtrar",
+      "buscar_placeholder": "Buscar..."
+    },
+    "contacto": {
+      "volver": "Volver",
+      "contacto": "CONTACTO",
+      "contactame": "Contáctame",
+      "desc_formulario": "Rellena el formulario para enviarme un mensaje.",
+      "nombre": "Nombre",
+      "nombre_placeholder": "Tu nombre",
+      "correo": "Correo",
+      "correo_placeholder": "tu@email.com",
+      "mensaje": "Mensaje",
+      "mensaje_placeholder": "Escribe tu mensaje...",
+      "enviar": "Enviar",
+      "reset": "Reset",
+      "privacidad": "Tu información no será compartida con nadie.",
+      "enviando": "Enviando...",
+	  "telefono": "Teléfono (Opcional)"
+
+    },
+    "admin": {
+      "panel": "Panel de Administrador",
+      "actualizar": "Actualizar",
+      "contactos": "Contactos",
+      "visitantes": "Visitantes",
+		"total_contactos": "Total de contactos",
+		"contactos_pendientes": "Contactos pendientes",
+		"total_visitas": "Total de visitas",
+		"no_contactos": "Aún no hay contactos",
+		"no_visitas": "Aún no hay visitas",
+		"leido": "Leído",
+		"pendiente": "Pendiente"
+
+    },
+    "tarjeta_carrousel": {
+      "github": "Github"
+    }
+  
+}

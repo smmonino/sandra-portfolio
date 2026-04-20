@@ -1,0 +1,160 @@
+@if(!sesion){
+  <app-modal></app-modal>
+}
+
+<main>
+
+  <section class="seccion-inicio">
+    <div class="fondo-seccion">
+      <div class="fondo-cuadricula"></div>
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+    </div>
+    <div class="contenedor-contenido" id="inicio">
+      <p class="titulo-persona">Sandra María Moñino García</p>
+      <h1 class="titulo">Fullstack<br>Developer</h1>
+      <p class="hero-desc">
+        {{ 'home.descripcion' | translate }}
+      </p>
+      <div class="container-botones">
+        <a [routerLink]="['/proyectos']" class="btn-proyectos">{{ 'home.ver_proyectos' | translate }}</a>
+        <a [routerLink]="['/contacto']" class="btn-contacto">{{ 'home.hablemos' | translate }}</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="seccion-sobre" id="sobre">
+
+    <div class="informacion">
+      <span class="titulo-badge">{{ 'home.badge_sobre_mi' | translate }}</span>
+      <h2 class="section-title">{{ 'home.quien_soy' | translate }}</h2>
+      <p class="sobre-desc">
+       {{ 'home.desc_sobre_mi' | translate }}
+      </p>
+
+      <div class="soft-skills-bloque">
+        <span class="stat-num">{{ 'home.soft_skills' | translate }}</span>
+        <div class="soft-skills-lista">
+          <span class="skill-pill"> {{ 'home.trabajo_equipo' | translate }}</span>
+          <span class="skill-pill"> {{ 'home.aprendizaje_rapido' | translate }}</span>
+          <span class="skill-pill"> {{ 'home.persistente' | translate }}</span>
+          <span class="skill-pill"> {{ 'home.dorientada_resultados' | translate }}</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tecnologias">
+      <span class="stat-num">{{ 'home.tecnologias' | translate }}</span>
+      <div class="contenedor-tecnologias">
+        @for(tech of tecnologias; track tech; let i = $index){
+          <div class="tarjeta-tecnologia" [style.animation-delay]="i * 0.08 + 's'">
+            <span class="tech-pop">{{ tech | uppercase }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+
+  <section class="seccion-timeline" id="experiencia">
+    <div class="timeline-cabecera">
+      <span class="titulo-badge">{{ 'home.badge_trayectoria' | translate }}</span>
+      <h2 class="section-title">{{ 'home.experiencia_estudios' | translate }}</h2>
+    </div>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-linea"></div>
+      <div class="timeline-col timeline-col--izq">
+
+
+        <div class="timeline-item" style="animation-delay:0.1s">
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <span class="tl-tipo tl-tipo--work">{{ 'home.practicas' | translate }}</span>
+              <span class="tl-fecha">2026 · Actualidad</span>
+            </div>
+            <h3 class="tl-titulo">Fullstack Developer</h3>
+            <p class="tl-empresa">Plexus Tech · Mérida · Híbrido</p>
+            <p class="tl-desc"></p>
+            <div class="tl-techs">
+              <span>Angular</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item" style="animation-delay:0.3s">
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <span class="tl-tipo tl-tipo--work">{{ 'home.practicas' | translate }}</span>
+              <span class="tl-fecha">2025 – 1 mes</span>
+            </div>
+            <h3 class="tl-titulo">Desarrolladora Backend en prácticas ( FP Dual DAM)</h3>
+            <p class="tl-empresa">Plexus Tech · Mérida · Presencial</p>
+            <p class="tl-desc">Durante este mes de prácticas trabajé en el equipo de backend de una aplicación web similar a OpenWebinars. Creación y modelado de la base de datos en Supabase. Microservicios con Springboot3, JPA Hibernate y APIs Rest. Desarrollo de chatbot conectado a Mistral AI como asistente para resolución de preguntas del usuario. Implementación y despliegue de contenedores de Docker en Render.</p>
+            <div class="tl-techs">
+              <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+
+        </div>
+
+        
+      </div>
+
+
+      <div class="timeline-col timeline-col--der">
+        <div class="timeline-item" style="animation-delay:0.2s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card__header">
+              <span class="tl-tipo tl-tipo--study">{{ 'home.estudios' | translate }}</span>
+              <span class="tl-fecha">2024 – Actualidad</span>
+            </div>
+            <h3 class="tl-titulo">CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p class="tl-empresa">IES Albarregas · Mérida</p>
+            <p class="tl-desc">Especialización en desarrollo móvil, web y escritorio</p>
+            <div class="tl-techs">
+              <span>Java</span><span>Spring Boot</span><span>Dart</span><span>Flutter</span><span>Python</span><span>UI/UX</span><span>Odoo</span><span>XML</span><span>MySQL</span><span>PostgreSQL</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion-proyectos" id="projects">
+    <div class="proyectos-cabecera">
+      <span class="titulo-badge">{{ 'home.badge_proyectos' | translate }}</span>
+      <h2 class="section-title">{{ 'home.lo_construido' | translate }}</h2>
+    </div>
+    <div class="carrousel">
+      <button class="flecha" (click)="anterior()">&#8592;</button>
+      <div class="carrousel-track">
+        @for(pro of tarjetasVisibles; let i = $index; track pro){
+          <app-tarjeta-carrousel
+            [conDescripcion]="false"
+            [proyecto]="pro"
+            class="tarjeta"
+            [ngClass]="{seleccionada: i === 1}">
+          </app-tarjeta-carrousel>
+        }
+      </div>
+      <button class="flecha" (click)="siguiente()">&#8594;</button>
+    </div>
+    <div class="carrousel-dots">
+      @for(pro of proyectos; let i = $index; track pro){
+        <button
+          class="dot"
+          [ngClass]="{activo: i === visible}"
+          (click)="irA(i)">
+        </button>
+      }
+    </div>
+  </section>
+
+</main>

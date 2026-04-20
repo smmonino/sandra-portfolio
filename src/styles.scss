@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body, main{
+  background: #080a0e;
+  color: #f0f6ff;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+a { 
+  text-decoration: none; 
+  color: inherit; 
+}
+img { 
+  max-width: 100%; 
+}
+ ::-webkit-scrollbar { 
+  width: 4px; 
+}
+::-webkit-scrollbar-track { 
+  background: #080a0e; 
+}
+::-webkit-scrollbar-thumb { 
+  background:  #3d4f62; 
+  border-radius: 2px; 
+}
+
+

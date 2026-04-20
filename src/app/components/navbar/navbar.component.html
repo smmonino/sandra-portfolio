@@ -1,0 +1,32 @@
+  <nav class="navbar" >
+    <div class="izquierda-nav">
+      <a href="https://www.linkedin.com/in/sandrammg" target="_blank" class="botones-iconos"><img src="https://th.bing.com/th/id/R.a08f59f44e32ab5f5fe579b7b4088b97?rik=3E5gaOcXYtlNqw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flinkedin-icon-png--1600.png&ehk=hT4qxxosZ6XpSngPePNTaISdBNvqL%2fIw9mStnfVAkdg%3d&risl=&pid=ImgRaw&r=0"></a>
+        <a href="https://github.com/smmonino" target="_blank" class="botones-iconos"><img src="https://www.svgrepo.com/show/439171/github.svg"></a>
+    </div>
+   
+ 
+    <div class="derecha-nav">
+      <div>
+        <span>{{ 'navbar.bienvenida' | translate: {user: userService.user()} }}</span>
+      </div>
+       
+      <a [routerLink]="'/'" class="links-internos">{{ 'navbar.inicio' | translate}}</a>
+      <a [routerLink]="'/proyectos'" class="links-internos">{{ 'navbar.proyectos' | translate}}</a>
+
+      @if(!userService.isAdmin()){
+        <a [routerLink]="'/contacto'" class="links-internos" >{{ 'navbar.contacto' | translate}}</a>
+      }
+      
+      <a [routerLink]="'/admin'" class="links-internos" >{{ 'navbar.panel' | translate}}</a>
+      
+   
+      <div class="idiomas" >
+         @for(idioma of idiomas; track idioma){
+            <button class="opciones" [ngClass]="{'activo': idiomaSeleccionado.codigo === idioma.codigo}" [value]="idioma" (click)="cambiarIdioma(idioma.codigo)"><img class="img-idioma" [src]="idioma.ruta" [alt]="idioma.codigo | uppercase" />{{idioma.codigo | uppercase}}</button>
+          }
+      </div>
+      @if(userService.isAdmin()){
+        <button class="btn-salir" (click)="salirAdmin()">Salir</button>
+      }
+    </div>
+  </nav>

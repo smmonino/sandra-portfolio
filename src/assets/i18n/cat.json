@@ -1,0 +1,105 @@
+{
+
+    "navbar": {
+      "bienvenida": "Benvingut, {{ user }}",
+      "inicio": "Inici",
+      "proyectos": "Projectes",
+      "contacto": "Contacte",
+      "panel": "Panell"
+    },
+    "footer": {
+      "copyright": "2025 Sandra María Moñino García. Tots els drets reservats."
+    },
+    "modal": {
+      "bienvenida": "BENVINGUT",
+      "antes_continuar": "Abans de continuar...",
+      "quien_visita": "Fes-me saber qui em visita.",
+      "nombre": "Nom",
+      "nombre_placeholder": "El teu nom",
+      "password": "Contrasenya",
+      "password_placeholder": "********",
+      "entrar": "Entrar",
+      "privacidad": "La teva informació no es compartirà amb ningú."
+    },
+    "home": {
+      "nombre_persona": "Sandra María Moñino García",
+      "titulo": "Desenvolupadora Fullstack",
+      "descripcion": "Especialitzada en arquitectures modernes, interfícies expressives i codi que escala. De la idea al desplegament.",
+      "ver_proyectos": "Veure projectes",
+      "hablemos": "Parlem",
+      "badge_sobre_mi": "Sobre mi",
+      "quien_soy": "Qui sóc?",
+      "desc_sobre_mi": "Sóc desenvolupadora fullstack amb experiència construint productes web complets. Em mou resoldre problemes reals amb tecnologia neta i ben pensada. Treballo còmodament tant en backend com en frontend, i gaudeixo especialment de la intersecció entre ambdós: arquitectura d'APIs, rendiment i UX.",
+      "soft_skills": "Soft Skills",
+      "trabajo_equipo": "Treball en equip",
+      "aprendizaje_rapido": "Aprenentatge ràpid",
+      "persistente": "Persistent",
+      "orientada_resultados": "Orientada a resultats",
+      "tecnologias": "Tecnologies",
+      "badge_trayectoria": "Trajectòria",
+      "experiencia_estudios": "Experiència i Estudis",
+      "trabajo": "Feina",
+      "presente": "2024 – Present",
+      "dev_junior": "Desenvolupadora Fullstack Junior",
+      "empresa_xyz": "Empresa XYZ · Badajoz",
+      "desc_junior": "Desenvolupament de mòduls en Odoo, APIs REST amb Spring Boot i dashboards Angular. Manteniment i integració amb PostgreSQL.",
+      "practicas": "Pràctiques",
+      "anio_practicas": "2023",
+      "desarrollo_aplicaciones": "Desenvolupament d'aplicacions",
+      "startup_abc": "Startup ABC · Remot",
+      "desc_practicas": "Creació de l'app KultuX (Flutter + Spring Boot + PostgreSQL). Disseny de l'arquitectura i primera versió pública.",
+      "estudios": "Estudis",
+      "estudios_2022_2024": "2022 – 2024",
+      "titulo_cfgs": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
+      "ies_badajoz": "IES · Badajoz",
+      "desc_cfgs": "Especialització en desenvolupament mòbil, web i d'escriptori. Projecte final KultuX, premiat com a millor projecte de la promoció.",
+      "estudios_2020_2022": "2020 – 2022",
+      "titulo_cfgm": "CFGM Sistemes Microinformàtics i Xarxes",
+      "desc_cfgm": "Fonaments de xarxes, administració de sistemes i primers passos en programació.",
+      "badge_proyectos": "Projectes",
+      "lo_construido": "El que he construït",
+      "actualidad": "Actualitat",
+      "hibrido": "Híbrido",
+      "mes": "mes",
+      "remoto": "Remot"
+    },
+    "proyectos": {
+      "todos_proyectos": "Tots els meus projectes",
+      "filtrar": "Filtrar",
+      "buscar_placeholder": "Cercar..."
+    },
+    "contacto": {
+      "volver": "Tornar",
+      "contacto": "CONTACTE",
+      "contactame": "Contacta'm",
+      "desc_formulario": "Omple el formulari per enviar-me un missatge.",
+      "nombre": "Nom",
+      "nombre_placeholder": "El teu nom",
+      "correo": "Correu",
+      "correo_placeholder": "el.teu@email.com",
+      "mensaje": "Missatge",
+      "mensaje_placeholder": "Escriu el teu missatge...",
+      "enviar": "Enviar",
+      "reset": "Reiniciar",
+      "privacidad": "La teva informació no es compartirà amb ningú.",
+      "enviando": "Enviant...",
+      "telefono": "Telèfon (Opcional)"
+    },
+    "admin": {
+      "panel": "Panell d'Administrador",
+      "actualizar": "Actualitzar",
+      "contactos": "Contactes",
+      "visitantes": "Visitants",
+      "total_contactos": "Total de contactes",
+      "contactos_pendientes": "Contactes pendents",
+      "total_visitas": "Total de visites",
+      "no_contactos": "Encara no hi ha contactes",
+      "no_visitas": "Encara no hi ha visites",
+      "leido": "Llegit",
+      "pendiente": "Pendent"
+    },
+    "tarjeta_carrousel": {
+      "github": "Github"
+    }
+  
+}

@@ -1,0 +1,105 @@
+{
+
+    "navbar": {
+      "bienvenida": "Welcome, {{ user }}",
+      "inicio": "Home",
+      "proyectos": "Projects",
+      "contacto": "Contact",
+      "panel": "Panel"
+    },
+    "footer": {
+      "copyright": "2025 Sandra María Moñino García. All rights reserved."
+    },
+    "modal": {
+      "bienvenida": "WELCOME",
+      "antes_continuar": "Before continuing...",
+      "quien_visita": "Let me know who is visiting.",
+      "nombre": "Name",
+      "nombre_placeholder": "Your name",
+      "password": "Password",
+      "password_placeholder": "********",
+      "entrar": "Enter",
+      "privacidad": "Your information will not be shared with anyone."
+    },
+    "home": {
+      "nombre_persona": "Sandra María Moñino García",
+      "titulo": "Fullstack Developer",
+      "descripcion": "Specialized in modern architectures, expressive interfaces, and scalable code. From idea to deploy.",
+      "ver_proyectos": "See projects",
+      "hablemos": "Let's talk",
+      "badge_sobre_mi": "About me",
+      "quien_soy": "Who am I?",
+      "desc_sobre_mi": "I am a fullstack developer with experience building complete web products. I am driven to solve real problems with clean and well-thought-out technology. I am comfortable working on both backend and frontend, and I especially enjoy the intersection between the two: API architecture, performance, and UX.",
+      "soft_skills": "Soft Skills",
+      "trabajo_equipo": "Teamwork",
+      "aprendizaje_rapido": "Fast learning",
+      "persistente": "Persistent",
+      "orientada_resultados": "Results-oriented",
+      "tecnologias": "Technologies",
+      "badge_trayectoria": "Timeline",
+      "experiencia_estudios": "Experience & Studies",
+      "trabajo": "Work",
+      "presente": "2024 – Present",
+      "dev_junior": "Junior Fullstack Developer",
+      "empresa_xyz": "XYZ Company · Badajoz",
+      "desc_junior": "Development of modules in Odoo, REST APIs with Spring Boot, and Angular dashboards. Maintenance and integration with PostgreSQL.",
+      "practicas": "Internship",
+      "anio_practicas": "2023",
+      "desarrollo_aplicaciones": "Application development",
+      "startup_abc": "Startup ABC · Remote",
+      "desc_practicas": "Creation of the KultuX app (Flutter + Spring Boot + PostgreSQL). Architecture design and first public version.",
+      "estudios": "Studies",
+      "estudios_2022_2024": "2022 – 2024",
+      "titulo_cfgs": "CFGS Multiplatform Application Development",
+      "ies_badajoz": "IES · Badajoz",
+      "desc_cfgs": "Specialization in mobile, web, and desktop development. Final project KultuX, awarded best project of the class.",
+      "estudios_2020_2022": "2020 – 2022",
+      "titulo_cfgm": "CFGM Microcomputer Systems and Networks",
+      "desc_cfgm": "Fundamentals of networks, systems administration, and first steps in programming.",
+      "badge_proyectos": "Projects",
+      "lo_construido": "What I've built",
+	  "actualidad": "Present",
+	  "tipo_trabajo": "Plexus Tech · Mérida · Hybrid",
+	  "mes": "month",
+	  "remoto": "Remote"
+    },
+    "proyectos": {
+      "todos_proyectos": "All my projects",
+      "filtrar": "Filter",
+      "buscar_placeholder": "Search..."
+    },
+    "contacto": {
+      "volver": "Back",
+      "contacto": "CONTACT",
+      "contactame": "Contact me",
+      "desc_formulario": "Fill out the form to send me a message.",
+      "nombre": "Name",
+      "nombre_placeholder": "Your name",
+      "correo": "Email",
+      "correo_placeholder": "your@email.com",
+      "mensaje": "Message",
+      "mensaje_placeholder": "Write your message...",
+      "enviar": "Send",
+      "reset": "Reset",
+      "privacidad": "Your information will not be shared with anyone.",
+      "enviando": "Sending...",
+	  "telefono": "Phone (Optional)"
+    },
+    "admin": {
+      "panel": "Admin Panel",
+      "actualizar": "Update",
+      "contactos": "Contacts",
+      "visitantes": "Visitors",
+	  "total_contactos": "Total contacts",
+	  "contactos_pendientes": "Pending contacts",
+	  "total_visitas": "Total visits",
+	  "no_contactos": "No contacts yet",
+	  "no_visitas": "No visits yet",
+	  "leido": "Read",
+	  "pendiente": "Pending"
+    },
+    "tarjeta_carrousel": {
+      "github": "Github"
+    }
+  
+}

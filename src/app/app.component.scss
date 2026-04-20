@@ -1,0 +1,19 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px; // la altura REAL del nav
+  z-index: 1000;
+}
+
+.app-main {
+  flex: 1;
+  padding-top: 64px; // 👈 espacio para el navbar
+}

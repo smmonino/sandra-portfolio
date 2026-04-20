@@ -1,0 +1,34 @@
+<div id="welcome-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-glow"></div>
+      <div class="modal-header">
+        @if(esAdmin){
+         <button class="btn-cerrar" (click)="cerrar()">X</button> 
+        }
+        <span class="modal-tag">{{ 'modal.bienvenida' | translate }}</span>
+        <h2 class="modal-title">{{ 'modal.antes_continuar' | translate }}</h2>
+        <p class="modal-subtitle">{{ 'modal.quien_visita' | translate }}</p>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="entrar()">
+          <div class="input-group">
+            <label for="visitor-name">{{ 'modal.nombre' | translate }}</label>
+            <input matInput required type="text" name="nombre" placeholder="{{ 'modal.nombre_placeholder' | translate }}" autocomplete="off" [(ngModel)]="nombre"/>
+          </div>
+        @if(esAdmin){
+          <div class="input-group">
+            <label for="visitor-pass">{{ 'modal.password' | translate }}</label>
+            <input matInput requried type="password" name="pass" placeholder="{{ 'modal.password_placeholder' | translate }}" autocomplete="off" [(ngModel)]="pass"/>
+            @if(passError){
+              <label class="error"> Algo ha salido mal...</label>
+            }
+          </div>
+        }
+          <button id="modal-submit" class="modal-btn" type="submit">
+          <span>{{ 'modal.entrar' | translate }}</span>
+        </button>
+      </form>
+    </div>
+    <p class="modal-privacy">{{ 'modal.privacidad' | translate }}</p>
+  </div>
+</div> 

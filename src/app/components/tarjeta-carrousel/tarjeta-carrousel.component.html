@@ -1,0 +1,27 @@
+
+<mat-card>
+    <mat-card-header>
+        <img class="img-proyecto" [src]="proyecto.img">
+    </mat-card-header>
+    <mat-card-content>
+        <mat-card-title>{{proyecto.name}}</mat-card-title>
+        <div class="contenedor-tecnologias">
+            @for(tech of proyecto.techs; track tech){
+            <div class="tarjeta-tecnologia">
+                <span>{{ tech | uppercase}}</span>
+            </div>
+            }
+        </div>
+        @if(conDescripcion){
+           <p class="descripcion">{{proyecto.desc}}</p> 
+        }
+        
+    </mat-card-content>
+    <mat-card-actions>
+        <button class="boton">
+            <a [href]="proyecto.github" target="_blank">Github
+                <img class="img-git" src="https://www.svgrepo.com/show/439171/github.svg">
+            </a>
+        </button>
+    </mat-card-actions>
+</mat-card>

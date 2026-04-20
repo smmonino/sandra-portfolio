@@ -1,0 +1,127 @@
+<main>
+
+  <div class="barra-superior">
+    <div class="barra-izq">
+      <span class="admin-badge">ADMIN</span>
+      <h1>{{ 'admin.panel' | translate }}</h1>
+    </div>
+    <button (click)="actualizar()" class="btn-actualizar">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M23 4v6h-6"/><path d="M1 20v-6h6"/>
+        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+      </svg>
+      {{ 'admin.actualizar' | translate }}
+    </button>
+  </div>
+  <div class="contenedor-resumen">
+    <div class="contenedores">
+        <h2>{{ contactos().length}}</h2>
+        <p>{{ 'admin.total_contactos' | translate }}</p>
+    </div>
+    <div class="contenedores pendiente">
+         <h2>{{totalContactosPendientes()}}</h2>
+        <p>{{ 'admin.contactos_pendientes' | translate }}</p>
+    </div>
+    <div class="contenedores visitas">
+         <h2>{{ visitas().length}}</h2>
+        <p>{{ 'admin.total_visitas' | translate }}</p>
+    </div>
+  </div>
+
+  <div class="panel-grid">
+
+
+    <div class="columna">
+      <div class="col-cabecera">
+        <span class="col-etiqueta">{{ 'admin.contactos' | translate }}</span>
+        <span class="col-numero">{{ contactosOrdenados().length }}</span>
+      </div>
+
+      <div class="col-scroll">
+        @if(contactosOrdenados().length === 0){
+          <div class="vacio">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>{{ 'admin.no_contactos' | translate }}</span>
+          </div>
+        }
+
+        @for(contacto of contactosOrdenados(); track contacto.id){
+          <div class="fila-contacto"
+               [class.pendiente]="!contacto.open"
+               [class.expandida]="contactoExpandido === contacto.id"
+               (click)="toggleExpandir(contacto)">
+
+            <div class="fila-top">
+              <span class="indicador-estado" [class.ind-pendiente]="!contacto.open" [class.ind-leido]="contacto.open"></span>
+              <span class="estado-texto" [class.txt-pendiente]="!contacto.open" [class.txt-leido]="contacto.open">
+                {{ contacto.open ? 'Leído' : 'Pendiente' }}
+              </span>
+              <span class="fila-tiempo" [class.ind-pendiente]="!contacto.open" [class.ind-leido]="contacto.open">{{ contacto.date | timeAgo }}</span>
+              <svg class="chevron" [class.abierto]="contactoExpandido === contacto.id"
+                   width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </div>
+
+            <div class="fila-mid">
+              <span class="fila-nombre">{{ contacto.name }}</span>
+              <span class="fila-email">{{ contacto.email }}</span>
+            </div>
+
+            <div class="fila-preview">{{ contacto.msg }}</div>
+
+            @if(contactoExpandido === contacto.id){
+              <div class="fila-expandida">
+                <p class="msg-completo">{{ contacto.msg }}</p>
+                @if(contacto.tlfn){
+                  <span class="tlfn-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/>
+                    </svg>
+                    {{ contacto.tlfn }}
+                  </span>
+                }
+              </div>
+            }
+
+          </div>
+        }
+      </div>
+    </div>
+
+ 
+    <div class="columna columna--visitantes">
+      <div class="col-cabecera">
+        <span class="col-etiqueta">{{ 'admin.visitantes' | translate }}</span>
+        <span class="col-numero">{{ visitas().length }}</span>
+      </div>
+
+      <div class="col-scroll">
+        @if(visitas().length === 0){
+          <div class="vacio">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span>{{ 'admin.no_visitas' | translate }}</span>
+          </div>
+        }
+
+        @for(visita of visitas(); track visita.id){
+          <div class="fila-visitante">
+            <div class="vis-avatar">{{ visita.name ? visita.name[0].toUpperCase() : '?' }}</div>
+            <div class="vis-datos">
+              <span class="vis-nombre">{{ visita.name }}</span>
+              <span class="vis-fecha">{{ visita.date ? (visita.date | timeAgo) : '' }} · {{ visita.date | date:'short' }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+  </div>
+
+</main>

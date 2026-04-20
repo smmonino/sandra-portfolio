@@ -1,0 +1,17 @@
+<main>
+
+        <div class="pantalla">
+        <div class="cabecera">
+            <h2>{{ 'proyectos.todos_proyectos' | translate }}</h2>
+            <div class="input-group">
+                <label>{{ 'proyectos.filtrar' | translate }}</label>
+                <input type="text" placeholder="{{ 'proyectos.buscar_placeholder' | translate }}" [(ngModel)]="tech">
+            </div>
+        </div>
+        <div class="contenedor proyectos">
+            @for(proyecto of proyectosFiltrados; track proyecto){
+                <app-tarjeta-carrousel [conDescripcion]="true" [proyecto]="proyecto"></app-tarjeta-carrousel>
+            }
+        </div>
+    </div>
+</main>
