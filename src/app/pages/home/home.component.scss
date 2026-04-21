@@ -31,7 +31,7 @@ main {
 
 .hero-orb {
   position: absolute;
-  border-radius: 50%;
+
   filter: blur(120px);
   opacity: 0.35;
 
@@ -94,7 +94,7 @@ main {
 .btn-proyectos {
   background: #ffe263;
   padding: 0.85rem 1.6rem;
-  border-radius: 12px;
+
   color: #000;
   font-weight: 600;
   font-size: 0.9rem;
@@ -110,7 +110,7 @@ main {
 
 .btn-contacto {
   padding: 0.85rem 1.6rem;
-  border-radius: 12px;
+
   border: 1px solid rgba(#ffe263, 0.3);
   color: #c9d8e8;
   font-size: 0.9rem;
@@ -135,7 +135,7 @@ main {
   background: rgba(#ffe263, 0.08);
   border: 1px solid rgba(#ffe263, 0.2);
   padding: 4px 12px;
-  border-radius: 4px;
+
   margin-bottom: 12px;
 }
 
@@ -201,7 +201,7 @@ main {
   background: #1c1c1c;
   border: 1px solid #2a2a2a;
   padding: 5px 12px;
-  border-radius: 999px;
+
   transition: all 0.2s;
 
   &:hover {
@@ -228,7 +228,7 @@ main {
 .tarjeta-tecnologia {
   background: #1c1c1c;
   border: 1px solid#2a2a2a;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 16px 4px;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ main {
 .tarjeta-herramienta {
   background: #1c1c1c;
   border: 1px solid#84aaa7b2;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 16px 4px;
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ main {
 .timeline-card {
   background: #1c1c1c;
   border: 1px solid #2a2a2a;
-  border-radius: 16px;
+
   padding: 1.4rem 1.5rem;
   width: 100%;
   transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
@@ -375,7 +375,7 @@ main {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   padding: 3px 10px;
-  border-radius: 999px;
+ 
 
   &--work {
     color: #ffe263;
@@ -429,7 +429,7 @@ main {
     background: rgba(255,255,255,0.04);
     border: 1px solid #2a2a2a;
     padding: 2px 8px;
-    border-radius: 4px;
+   
   }
 }
 
@@ -465,7 +465,6 @@ main {
   flex-shrink: 0;
   background: rgba(#ffe263, 0.1);
   border: 1px solid rgba(#ffe263, 0.25);
-  border-radius: 50%;
   width: 44px;
   height: 44px;
   color: #ffe263;
