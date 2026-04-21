@@ -23,12 +23,12 @@
     "home": {
       "nombre_persona": "Sandra María Moñino García",
       "titulo": "Fullstack Developer",
-      "descripcion": "Especializado en arquitecturas modernas, interfaces expresivas y código que escala. De la idea al deploy.",
+      "descripcion": "Especializada en desarrollo fullstack con Angular y Spring Boot, así como en aplicaciones móviles y soluciones backend robustas. Diseño productos modernos, escalables y con interfaces atractivas, participando en todo el proceso: desde la idea hasta el despliegue final.",
       "ver_proyectos": "Ver proyectos",
       "hablemos": "Hablemos",
       "badge_sobre_mi": "Sobre mí",
       "quien_soy": "¿Quién soy?",
-      "desc_sobre_mi": "Soy desarrolladora fullstack con experiencia construyendo productos web completos. Me mueve resolver problemas reales con tecnología limpia y bien pensada. Trabajo cómoda tanto en backend como en frontend, y disfruto especialmente la intersección entre los dos: arquitectura de APIs, rendimiento y UX.",
+      "desc_sobre_mi": "Me considero una persona muy perseverante y orientada a la excelencia en todo lo que hago. Disfruto profundizando en los detalles técnicos y buscando siempre una forma eficiente y bien estructurada de resolver los retos que se me presentan. Cuando no sé algo, investigo y aprendo por mi cuenta hasta dominarlo. Además, me gusta aportar al equipo, resolver dudas y compartir lo que descubro con otros.",
       "soft_skills": "Soft Skills",
       "trabajo_equipo": "Trabajo en equipo",
       "aprendizaje_rapido": "Aprendizaje rápido",
@@ -38,7 +38,6 @@
       "badge_trayectoria": "Trayectoria",
       "experiencia_estudios": "Experiencia & Estudios",
       "trabajo": "Trabajo",
-      "presente": "2024 – Presente",
       "dev_junior": "Desarrolladora Fullstack Junior",
       "empresa_xyz": "Empresa XYZ · Badajoz",
       "desc_junior": "Desarrollo de módulos en Odoo, APIs REST con Spring Boot y dashboards Angular. Mantenimiento e integración con PostgreSQL.",
@@ -57,10 +56,22 @@
       "desc_cfgm": "Fundamentos de redes, administración de sistemas y primeros pasos en programación.",
       "badge_proyectos": "Proyectos",
       "lo_construido": "Lo que he construido",
-	  "actualidad": "Present",
-	  "hibrido": "Híbrido",
-	  "mes": "mes",
-	  "remoto": "Remoto"
+	    "actualidad": "Presente",
+	    "hibrido": "Híbrido",
+	    "mes": "mes",
+	    "remoto": "Remoto",
+      "compromiso_responsabilidad": "Compromiso y responsabilidad",
+      "empatia": "Empatía",
+      "resolucion_problemas": "Resolución de problemas",
+      "proactiva": "Proactiva",
+      "autodidacta": "Autodidacta",
+      "perseverancia": "Perseverancia",
+      "colaboracion": "Colaboración",
+      "fp_dual": "Desarrolladora Backend en prácticas (FP Dual DAM)",
+      "desc_practicas_plexus": "Durante este mes de prácticas trabajé en el equipo de backend de una aplicación web similar a OpenWebinars. Creación y modelado de la base de datos en Supabase. Microservicios con Springboot3, JPA Hibernate y APIs Rest. Desarrollo de chatbot conectado a Mistral AI como asistente para resolución de preguntas del usuario. Implementación y despliegue de contenedores de Docker en Render.",
+      "cfgs_dam": "CFGS Desarrollo de Aplicaciones Multiplataforma",
+      "desc_formacion": "Durante mi formación he desarrollado proyectos completos utilizando tecnologías como Java, Spring Boot, JavaFX, Python, Dart y Flutter, además de Angular para desarrollo web frontend. Tengo experiencia con bases de datos relacionales como MySQL y PostgreSQL, integración con Odoo como ERP, y el uso de HTML, CSS y JavaScript para interfaces dinámicas. Esto me ha permitido abordar tanto el backend como el frontend de aplicaciones, así como el despliegue de soluciones multiplataforma y móviles.",
+      "desc_practicas_actuales_plexus": "Actualmente estoy realizando mis prácticas con el objetivo de formarme como desarrollador fullstack, enfocándome en tecnologías modernas como Angular para el frontend y Spring Boot para el backend. Esta experiencia me está permitiendo comprender el ciclo completo de desarrollo de aplicaciones web, integrando tanto la lógica de servidor como la interfaz de usuario, y afianzar conceptos clave de colaboración, arquitectura y despliegue de soluciones en equipo."
     },
     "proyectos": {
       "todos_proyectos": "Todos mis proyectos",
@@ -82,21 +93,21 @@
       "reset": "Reset",
       "privacidad": "Tu información no será compartida con nadie.",
       "enviando": "Enviando...",
-	  "telefono": "Teléfono (Opcional)"
+	    "telefono": "Teléfono (Opcional)"
 
     },
     "admin": {
       "panel": "Panel de Administrador",
       "actualizar": "Actualizar",
       "contactos": "Contactos",
-      "visitantes": "Visitantes",
-		"total_contactos": "Total de contactos",
-		"contactos_pendientes": "Contactos pendientes",
-		"total_visitas": "Total de visitas",
-		"no_contactos": "Aún no hay contactos",
-		"no_visitas": "Aún no hay visitas",
-		"leido": "Leído",
-		"pendiente": "Pendiente"
+      "visitantes": "Visitas",
+		  "total_contactos": "Contactos",
+		  "contactos_pendientes": "Pendientes",
+		  "total_visitas": "Visitas",
+		  "no_contactos": "Aún no hay contactos",
+		  "no_visitas": "Aún no hay visitas",
+		  "leido": "Leído",
+		  "pendiente": "Pendiente"
 
     },
     "tarjeta_carrousel": {

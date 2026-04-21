@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, QueryList, ViewChildren } from '@angular/core';
 import { ModalComponent } from '../../components/modal/modal.component';
 import { RouterModule } from '@angular/router';
 import { gsap } from 'gsap';
@@ -21,7 +21,8 @@ gsap.registerPlugin(ScrollTrigger);
     UpperCasePipe,
     TarjetaCarrouselComponent,
     NgClass,
-    TranslateModule
+    TranslateModule,
+    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -36,9 +37,14 @@ export class HomeComponent {
     'java', 'spring boot', 'java fx','python', 'dart',
     'flutter', 'angular', 'postgresql', 'odoo','html','css','js', 'mysql',
   ];
+  herramientas: string[] = [
+    'GitHub', 'Supabase', 'Firebase',' Retrofit','Docket Compose', 'Swagger', 'Trello',
+    'IntelliJ', 'VSCode', 'Android Studio', 'Sublime Text', 'Scene Builder', 'Postman', 'Render', 'Vercel', 'Docker', 'Figma',
+  ]
 
   visible = 0;
   sesion: boolean = false;
+  @ViewChildren('tarjeta') tarjetas!: QueryList<ElementRef>;
 
   ngOnInit() {
     this.sesion = localStorage.getItem('user') !== null;
@@ -47,11 +53,12 @@ export class HomeComponent {
 
   ngAfterViewInit() {
     this.animarPortada();
-    this.animarOrbes();
-    this.animarTecnologias();
+    this.animarTarjeta();
+    //this.animarTecnologias();
+    
 
   }
-  private animarPortada(){
+   private animarPortada(){
       gsap.from('.titulo-persona, .titulo, .hero-desc, .container-botones', {
       y: 30,
       opacity: 0,
@@ -61,32 +68,21 @@ export class HomeComponent {
     });
   }
 
-  private animarOrbes(){
-    gsap.to('.hero-orb hero-orb--1, .hero-orb hero-orb--2',{
-      x: -40,
-      y:30,
-      scale: 1.08,
-      duration: 14,
-      ease: 'sine.inOut',
-      yoyo:true,
-      repeat: -1
+  private animarTarjeta(){
+    this.tarjetas.forEach((tarjeta, i) => {
+      gsap.from(tarjeta.nativeElement, {
+          opacity: 0,
+          y: 40,
+          duration: 0.7,
+          delay: i * 0.05,
+          scrollTrigger: {
+            trigger: tarjeta.nativeElement,
+            start: 'top 90%',
+            toggleActions: 'play none none none'
+          }
+        });
     });
   }
- private animarTecnologias(): void {
-    gsap.to('.tarjeta-tecnologia', {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 0.45,
-      stagger: 0.08,
-      ease: 'back.out(1.56)',
-      scrollTrigger: {
-        trigger: '.contenedor-tecnologias',
-        start: 'top 85%',
-      },
-    });
-  }
-  
 
   get tarjetasVisibles(): Proyecto[] {
     const total = this.proyectos.length;

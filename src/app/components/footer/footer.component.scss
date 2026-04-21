@@ -22,9 +22,9 @@
  
 .logo {
   width: 36px; height: 36px;
-  background: rgba(#ffe263, 0.1);
+  
   border: 1px solid rgba(#ffe263, 0.2);
-  border-radius: 8px;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.445);
   display: flex; align-items: center; justify-content: center;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1rem;
@@ -34,7 +34,7 @@
  
 .datos {
   font-size: 0.8rem;
-  color: #3d4f62;
+  color: #a6a6a7;
 }
  
 .links {
@@ -42,12 +42,10 @@
   gap: 12px;
   
 }
-a{
-  background-color: antiquewhite;
-}
+
 .iconos {
   width: 34px; height: 34px;
-  border-radius: 8px;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.445);
   border: 1px solid  rgba(255, 255, 255, 0.06);
   display: flex; align-items: center; justify-content: center;
   color: #3d4f62;

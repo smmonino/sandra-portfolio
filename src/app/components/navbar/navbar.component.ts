@@ -1,5 +1,5 @@
 import { NgClass, UpperCasePipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -15,7 +15,7 @@ import { UserService } from '../../services/user.service';
     MatSelectModule,
     UpperCasePipe,
     MatFormFieldModule,
-    TranslateModule,RouterModule, NgClass
+    TranslateModule,RouterModule, NgClass,
 
 ],
   templateUrl: './navbar.component.html',
@@ -29,6 +29,7 @@ export class NavbarComponent {
   router = inject(Router);
   isAdmin: boolean = false;
   userService = inject(UserService);
+  @Output() salir = new EventEmitter<void>();
   
  
   idiomas = [
@@ -63,7 +64,7 @@ export class NavbarComponent {
   salirAdmin(){
     localStorage.removeItem('user');
     this.userService.logout();
-    this.router.navigate(['/']);
+    this.salir.emit();
   }
 
   

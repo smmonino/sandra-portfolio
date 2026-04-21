@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -25,7 +25,9 @@ export class ModalComponent {
   visitanteService = inject(VisitantesService);
 
   passError: boolean = false;
-  
+
+  @Output() cerrarModal = new EventEmitter<void>();
+   
   get esAdmin() {
     return this.nombre.toLowerCase().trim() === 'admin';
   }
@@ -41,22 +43,25 @@ export class ModalComponent {
         this.passError = false;
         const overlay = document.getElementById('welcome-modal');
         if (overlay) overlay.classList.add('hidden');
+         this.cerrarModal.emit();
         this.router.navigate(['/admin']);
         return;
       } else {
         this.passError = true;
-        
         return;
       }
     } else {
       this.passError = false;
       if (this.nombre.trim() !== '' && this.userService.login(this.nombre)) {
         this.registrarVisita();
+
         const overlay = document.getElementById('welcome-modal');
         if (overlay) overlay.classList.add('hidden');
+        this.cerrarModal.emit();
+      
         return;
       } else {
-        
+      
         return;
       }
     }

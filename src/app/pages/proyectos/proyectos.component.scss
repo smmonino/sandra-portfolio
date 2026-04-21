@@ -6,7 +6,7 @@
   background: #63c3ff;
   color: #080a0e;
   border: none;
-  border-radius: 8px;
+
   padding: 8px 18px;
   font-size: 1rem;
   font-weight: 600;
@@ -61,13 +61,14 @@ main::after{
     input {
       padding: 0.5rem 0.75rem;
       border: 1px solid #ccc;
-      border-radius: 6px;
+    
       font-size: 0.9rem;
       outline: none;
       transition: border-color 0.2s, box-shadow 0.2s;
       background: rgba(255,255,255,0.04);
 
       &:focus {
+        color: white;
         border-color: #ffe263;
         box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.15);
       }

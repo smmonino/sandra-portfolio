@@ -11,7 +11,7 @@ export class ProyectosService {
       {
         id: 1,
         name: 'Labyrinthus',
-        desc: 'Este proyecto es un videojuego desarrollado en Java utilizando JavaFX para la interfaz gráfica, implementando la arquitectura Modelo-Vista-Controlador (MVC). La principal particularidad de la aplicación es que la disposición visual del juego se genera dinámicamente a partir de un archivo .txt, lo que permite crear escenarios o niveles de manera flexible y sencilla. La presentación visual se complementa mediante CSS para mejorar la apariencia de los elementos gráficos y menús. La aplicación gestiona la lógica del juego, la interacción con el usuario y ofrece distintos retos o niveles, todo dentro de una estructura modular, moderna y fácilmente escalable.',
+        desc: 'Videojuego desarrollado en Java utilizando JavaFX para la interfaz gráfica, implementando la arquitectura Modelo-Vista-Controlador (MVC). La principal particularidad de la aplicación es que la disposición visual del juego se genera dinámicamente a partir de un archivo .txt, lo que permite crear escenarios o niveles de manera flexible y sencilla. La presentación visual se complementa mediante CSS para mejorar la apariencia de los elementos gráficos y menús. La aplicación gestiona la lógica del juego, la interacción con el usuario y ofrece distintos retos o niveles, todo dentro de una estructura modular, moderna y fácilmente escalable.',
         img: 'assets/images/labirinthus.png',
         techs: [
             'Java' ,
@@ -24,7 +24,7 @@ export class ProyectosService {
       {
         id: 2,
         name: 'La Batalla de los V Pueblos',
-        desc: 'Este proyecto es un videojuego por turnos con una temática inspirada en mundos de fantasía épica, desarrollado para ejecutarse en navegadores web utilizando JavaScript, HTML y CSS. El juego cuenta con niveles progresivos, personajes con estadísticas personalizables, tiendas donde adquirir armas y mejoras, así como un sistema de combate estratégico por turnos. Incluye además efectos de sonido y música ambiental que acompañan la experiencia, logrando una atmósfera inmersiva y dinámica. Gracias al uso de tecnologías web, la aplicación ofrece una interfaz moderna, animaciones atractivas y compatibilidad multiplataforma.',
+        desc: 'videojuego de estilo RPG interactivo que se ejecuta en el navegador. El juego permite a los usuarios:Crear y personalizar un personaje escogiendo raza (como orco, mago, enano o elfo) y arma inicial.Continuar partidas guardadas, crear nuevas o eliminar datos.Navegar por diferentes menús: inventario, tienda, y combate en una arena.Consultar estadísticas del personaje: vida, maná, daño, defensa, resistencia mágica, experiencia, nivel y oro.Disfrutar de un ambiente con elementos multimedia como música, efectos de sonido, imágenes y animaciones de fondo.Acceder a instrucciones y documentación desde el propio menú principal.El juego implementa mecánicas típicas de RPG como progresión de personaje, arenas de combate, inventario, tienda de objetos y personalización. Todo esto se maneja a través de una interfaz web interactiva y dinámica, aprovechando las tecnologías web modernas.',
         img: 'assets/images/batalla_web.png',
        techs: [
          'HTML' ,
@@ -37,7 +37,7 @@ export class ProyectosService {
       {
         id: 3,
         name: 'Spotify',
-        desc: 'Aplicación que simula un Spotify personalizado, búsqueda en tiempo real de canciones y repoducción de la música.',
+        desc: 'Aplicación móvil para Android desarrollada en Java que simula la funcionalidad central de Spotify. Permite a los usuarios registrarse, iniciar sesión y gestionar su perfil, almacenar datos en Firebase, explorar y buscar canciones, artistas y álbumes, reproducir música desde una interfaz moderna e intuitiva, y gestionar imágenes de usuario. Integra menús y fragmentos para navegar entre el inicio, la biblioteca, el perfil, la búsqueda y el reproductor. Todo está diseñado para brindar una experiencia similar a la app oficial de Spotify, enfocado en el manejo local y en la nube de la información del usuario y su música.',
         img: 'assets/images/icono_spotify.png',
         techs: [
           'Java' ,
@@ -100,7 +100,7 @@ export class ProyectosService {
       {
         id:8,
         name: 'EcoRecicla-lite',
-        desc:'',
+        desc:'Aplicación en Java para gestionar la recogida y trazabilidad de residuos ecológicos. Permite importar la normativa y entregas en formato XML, registrar y consultar entregas, generar reportes mensuales y exportarlos, todo conectado a una base de datos MySQL. Cuenta con una API backend (Spring Boot) y un cliente de consola, facilitando la gestión y auditoría de residuos en centros participantes. ',
         img: 'assets/images/ecorecicla.png',
         techs: [
           'java',
@@ -113,7 +113,7 @@ export class ProyectosService {
       {
         id: 9,
         name: 'Cazadores de APIS',
-        desc: '',
+        desc: 'Aplicación desarrollada 100% en Java cuyo objetivo es consumir y mostrar información de APIs públicas desde un menú en consola. Utiliza principalmente dos APIs externas: ·JokeAPI: Recupera chistes de distintas categorías y tipos (chiste corto o en dos partes) y los muestra de forma interactiva al usuario. · TMDB API: Permite consultar información sobre películas y series, aprovechando la amplia base de datos de The Movie Database.El usuario puede seleccionar desde el menú principal entre consultar chistes (indicando tipo, categoría y cantidad), buscar información sobre películas, o salir de la aplicación. Incluye funciones para pausar entre la presentación de la pregunta y respuesta en chistes de dos partes, haciendo la interacción más dinámica.',
         img: 'assets/images/cazadores.png',
         techs: [
           'java',
@@ -122,7 +122,7 @@ export class ProyectosService {
       },
       {id: 10,
         name: 'Aventura',
-        desc: '',
+        desc: 'Sistema completo de gamificación escrito en Java que simula un mundo de fantasía donde los usuarios (aventureros) pueden aceptar misiones, ganar puntos y subir de nivel. Entre sus características principales destacan la integración con bases de datos MySQL usando JDBC, la implementación de reglas de negocio complejas (como restricciones de misiones activas y escalamiento de niveles), manejo de transacciones ACID, un sistema de ranking dinámico y auditoría de cambios.',
         img: 'assets/images/aventura.png',
         techs: [
           'java',

@@ -19,9 +19,8 @@
 
 .modal-box {
   position: relative;
-  background: #131b25;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
   box-sizing: border-box;
   padding: 48px 40px;
   width: min(480px, 92vw);
@@ -60,7 +59,7 @@
 
 .modal-subtitle {
   font-size: 0.9rem;
-  color:  #7a8fa8;
+  color:  #aaa;
   margin-bottom: 28px;
 }
 
@@ -70,23 +69,22 @@
     display: block;
     font-size: 0.78rem;
     font-weight: 500;
-    color:  #7a8fa8;
+    color:  #aaa;
     margin-bottom: 6px;
     letter-spacing: 0.04em;
   }
   input, textarea {
     width: 100%;
     background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius:  12px;
+    border: 1px solid #2a2a2a;
     padding: 12px 16px;
-    color: #f0f6ff;
+    color: #e0e0e0;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.2s;
     &:focus { border-color: #ffe263; }
-    &::placeholder { color:  #3d4f62; }
+    &::placeholder { color: #4e4e4e; }
     resize: vertical;
     min-height: 40px;
     box-sizing: border-box;
@@ -105,7 +103,7 @@
   background: #ffe263;
   color: #080a0e;
   border: none;
-  border-radius:  12px;
+
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
@@ -129,7 +127,7 @@
 .modal-privacy {
   text-align: center;
   font-size: 0.72rem;
-  color:  #3d4f62;
+  color:  #4e4e4e;
   margin-top: 12px;
 }
 
@@ -138,15 +136,14 @@
   top: 24px;
   left: 24px;
   background: transparent;
-  color: #ffe263;
-  border: 1px solid #ffe263;
-  border-radius: 8px;
+  color: #ffe263a8;
+  border: 1px solid #ffe26357;
   padding: 8px 18px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(99,195,255,0.08);
+  box-shadow: 0 2px 8px rgba(44,44,44,0.08);
   transition: background 0.2s, transform 0.2s;
   &:hover {
     background: lighten(#ffe263, 8%);
@@ -158,8 +155,8 @@
 main {
   padding: 2rem;
   background-image:
-    linear-gradient(rgba(99,195,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99,195,255,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(160,160,160,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160,160,160,0.03) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 main::after{
@@ -176,7 +173,7 @@ main::after{
     height: 6px;
     width: 0;
     background: linear-gradient(90deg, #2b7a07 60%, #48fd00 100%);
-    border-radius: 3px;
+ 
     transition: width 0.3s;
     min-width: 80px;
     max-width: 180px;

@@ -56,6 +56,9 @@ export class AdminComponent {
     return [...this.contactos()].sort((a, b) => new Date(b.date).getTime()).reverse();
   }
 
+  visitasOrdenadas(){
+    return [...this.visitas()].sort((a, b) => new Date(b.date!).getTime()).reverse();
+  }
 
 
   toggleExpandir(contacto: any): void {

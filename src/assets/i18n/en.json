@@ -24,7 +24,7 @@
     "home": {
       "nombre_persona": "Sandra María Moñino García",
       "titulo": "Fullstack Developer",
-      "descripcion": "Specialized in modern architectures, expressive interfaces, and scalable code. From idea to deploy.",
+      "descripcion": "Specialized in fullstack development with Angular and Spring Boot, as well as in mobile applications and robust backend solutions. I design modern, scalable products with attractive interfaces, participating in the entire process: from the idea to the final deployment.",
       "ver_proyectos": "See projects",
       "hablemos": "Let's talk",
       "badge_sobre_mi": "About me",
@@ -58,10 +58,22 @@
       "desc_cfgm": "Fundamentals of networks, systems administration, and first steps in programming.",
       "badge_proyectos": "Projects",
       "lo_construido": "What I've built",
-	  "actualidad": "Present",
-	  "tipo_trabajo": "Plexus Tech · Mérida · Hybrid",
-	  "mes": "month",
-	  "remoto": "Remote"
+	    "actualidad": "Present",
+	    "hibrido": "Hybrid",
+	    "mes": "month",
+	    "remoto": "Remote",
+      "compromiso_responsabilidad": "Commitment and responsibility",
+      "empatia": "Empathy",
+      "resolucion_problemas": "Problem solving",
+      "proactiva": "Proactive",
+      "autodidacta": "Self-taught",
+      "perseverancia": "Perseverance",
+      "colaboracion": "Collaboration",
+      "fp_dual": "Backend Developer Intern (Dual Vocational Training DAM)",
+      "desc_practicas_plexus": "During this internship month, I worked in the backend team of a web application similar to OpenWebinars. Database creation and modeling in Supabase. Microservices with Springboot3, JPA Hibernate, and REST APIs. Chatbot development connected to Mistral AI as an assistant for user questions. Implementation and deployment of Docker containers on Render.",
+      "cfgs_dam": "Higher Technician in Multiplatform Application Development",
+      "desc_formacion": "During my studies, I have developed complete projects using technologies such as Java, Spring Boot, JavaFX, Python, Dart, and Flutter, as well as Angular for frontend web development. I have experience with relational databases like MySQL and PostgreSQL, integration with Odoo as an ERP, and the use of HTML, CSS, and JavaScript for dynamic interfaces. This has allowed me to work on both the backend and frontend of applications, as well as the deployment of cross-platform and mobile solutions.",
+      "desc_practicas_actuales_plexus": "I am currently doing my internship with the goal of training as a fullstack developer, focusing on modern technologies such as Angular for the frontend and Spring Boot for the backend. This experience is allowing me to understand the complete development cycle of web applications, integrating both server logic and user interface, and to strengthen key concepts of collaboration, architecture, and team-based solution deployment."
     },
     "proyectos": {
       "todos_proyectos": "All my projects",
@@ -89,14 +101,14 @@
       "panel": "Admin Panel",
       "actualizar": "Update",
       "contactos": "Contacts",
-      "visitantes": "Visitors",
-	  "total_contactos": "Total contacts",
-	  "contactos_pendientes": "Pending contacts",
-	  "total_visitas": "Total visits",
-	  "no_contactos": "No contacts yet",
-	  "no_visitas": "No visits yet",
-	  "leido": "Read",
-	  "pendiente": "Pending"
+      "visitantes": "Visits",
+	    "total_contactos": "Contacts",
+	    "contactos_pendientes": "Pending",
+	    "total_visitas": "Visits",
+	    "no_contactos": "No contacts yet",
+	    "no_visitas": "No visits yet",
+	    "leido": "Read",
+	    "pendiente": "Pending"
     },
     "tarjeta_carrousel": {
       "github": "Github"

@@ -21,14 +21,14 @@
 }
  
 .botones-iconos {
-  background-color: bisque;
   width: 38px; height: 38px;
-  border-radius: 8px;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.445);
+ 
   border: 1px solid  rgba(255, 255, 255, 0.06);
   display: flex; 
   align-items: center; 
   justify-content: center;
-  color: #7a8fa8;
+  color: #a6a7a8;
   font-size: 1rem;
   transition: all 0.2s;
   &:hover {
@@ -47,7 +47,7 @@
 .links-internos {
   font-size: 0.88rem;
   font-weight: 400;
-  color: #7a8fa8;
+  color: #a6a6a7;
   position: relative;
   transition: color 0.2s;
   &::after {
@@ -72,7 +72,7 @@
 .opciones{
   background: transparent;
   border: 1px solid rgba(56, 43, 43, 0.06);
-  border-radius: 8px;
+
   color: #a8a77a;
   display: flex;
   flex-direction: row;
@@ -92,7 +92,7 @@
 .img-idioma{
   width:20px;
   height:15px;
-  border-radius: 2px; 
+
 }
 .activo{
   background: rgba(99, 195, 255, 0.08) !important;
@@ -106,8 +106,8 @@
   height: 38px;
   background: transparent;
   color: #ffffff;
-  border: 1px solid #ffe263;
-  border-radius: 8px;
+  border: 1px solid #ffe26354;
+
   font-size: 0.98rem;
   font-weight: 600;
   cursor: pointer;

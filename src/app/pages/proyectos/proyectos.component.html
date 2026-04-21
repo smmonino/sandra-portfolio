@@ -10,7 +10,7 @@
         </div>
         <div class="contenedor proyectos">
             @for(proyecto of proyectosFiltrados; track proyecto){
-                <app-tarjeta-carrousel [conDescripcion]="true" [proyecto]="proyecto"></app-tarjeta-carrousel>
+                <app-tarjeta-carrousel [proyecto]="proyecto"></app-tarjeta-carrousel>
             }
         </div>
     </div>
