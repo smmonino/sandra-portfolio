@@ -43,7 +43,8 @@ export class ModalComponent {
         this.passError = false;
         const overlay = document.getElementById('welcome-modal');
         if (overlay) overlay.classList.add('hidden');
-         this.cerrarModal.emit();
+        
+        this.cerrarModal.emit();
         this.router.navigate(['/admin']);
         return;
       } else {
@@ -54,14 +55,12 @@ export class ModalComponent {
       this.passError = false;
       if (this.nombre.trim() !== '' && this.userService.login(this.nombre)) {
         this.registrarVisita();
-
         const overlay = document.getElementById('welcome-modal');
         if (overlay) overlay.classList.add('hidden');
         this.cerrarModal.emit();
-      
+          this.router.navigate(['/']);
         return;
       } else {
-      
         return;
       }
     }

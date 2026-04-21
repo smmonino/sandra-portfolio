@@ -5,7 +5,7 @@ import { Injectable, signal } from '@angular/core';
 })
 export class UserService {
 
-  user = signal<string | null >(localStorage.getItem('user'));
+user = signal<string | null >(localStorage.getItem('user'));
 
 login(name: string, pass?: string): boolean {
   if (name.toLowerCase().trim() === 'admin') {
