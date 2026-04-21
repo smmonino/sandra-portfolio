@@ -4,33 +4,37 @@
             ← {{ 'contacto.volver' | translate }}
         </button>
         <div class="modal-box">
+
             <div class="modal-glow"></div>
+
             <div class="modal-header">
-            <span class="modal-tag">{{ 'contacto.contacto' | translate | uppercase }}</span>
-            <h2 class="modal-title">{{ 'contacto.contactame' | translate }}</h2>
-            <p class="modal-subtitle">{{ 'contacto.desc_formulario' | translate }}</p>
+                <span class="modal-tag">{{ 'contacto.contacto' | translate | uppercase }}</span>
+                <h2 class="modal-title">{{ 'contacto.contactame' | translate }}</h2>
+                <p class="modal-subtitle">{{ 'contacto.desc_formulario' | translate }}</p>
             </div>
-            <form class="modal-body" #contactForm="ngForm">
-            <div class="input-group">
-                <label for="contact-name">{{ 'contacto.nombre' | translate }}</label>
-                <input type="text" id="contact-name" name="nombre" placeholder="{{ 'contacto.nombre_placeholder' | translate }}" autocomplete="off" [(ngModel)]="nombre" required />
-            </div>
-            <div class="input-group">
-                <label for="contact-email">{{ 'contacto.correo' | translate }}</label>
-                <input type="email" id="contact-email" name="email" placeholder="tu@email.com" autocomplete="off" [(ngModel)]="email" required />
-            </div>
-            <div class="input-group">
-                <label for="contact-tlfn">{{ 'contacto.telefono' | translate }}</label>
-                <input type="tel" id="contact-tlfn" name="tlfn" placeholder="666 666 666" autocomplete="off" [(ngModel)]="tlfn"/>
-            </div>
-            <div class="input-group">
-                <label for="contact-message">{{ 'contacto.mensaje' | translate }}</label>
-                <textarea id="contact-message" name="mensaje" placeholder="{{ 'contacto.mensaje_placeholder' | translate }}" [(ngModel)]="mensaje" required></textarea>
-            </div>
-            <div class="modal-actions">
-                <button class="modal-btn" type="submit" (click)="enviar()" [disabled]="!contactForm.form.valid">{{ 'contacto.enviar' | translate }}</button>
-                <button class="modal-btn reset" type="reset" (click)="resetForm(contactForm)">{{ 'contacto.reset' | translate }}</button>
-            </div>
+
+            <form class="modal-body"  >
+
+                <div class="input-group">
+                    <label >{{ 'contacto.nombre' | translate }}</label>
+                    <input type="text"  name="nombre" placeholder="{{ 'contacto.nombre_placeholder' | translate }}" autocomplete="off" [(ngModel)]="nombre" required />
+                </div>
+                <div class="input-group">
+                    <label for="contact-email">{{ 'contacto.correo' | translate }}</label>
+                    <input type="email"  name="email" placeholder="tu@email.com"  autocomplete="off" [(ngModel)]="email" required />
+                </div>
+                <div class="input-group">
+                    <label >{{ 'contacto.telefono' | translate }}</label>
+                    <input type="tel" name="tlfn" placeholder="666 666 666" autocomplete="off" [(ngModel)]="tlfn"/>
+                </div>
+                <div class="input-group">
+                    <label >{{ 'contacto.mensaje' | translate }}</label>
+                    <textarea  name="mensaje" placeholder="{{ 'contacto.mensaje_placeholder' | translate }}" autocomplete="off" [(ngModel)]="mensaje" required></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button class="modal-btn" type="submit" (click)="enviar()" >{{ 'contacto.enviar' | translate }}</button>
+                    <button class="modal-btn reset" type="reset" (click)="resetForm()">{{ 'contacto.reset' | translate }}</button>
+                </div>
             </form>
             <p class="modal-privacy">{{ 'contacto.privacidad' | translate }}</p>
 

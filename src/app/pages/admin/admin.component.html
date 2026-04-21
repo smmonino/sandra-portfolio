@@ -31,7 +31,7 @@
 
   <div class="panel-grid">
 
-    <!-- CONTACTOS -->
+
     <div class="columna">
       <div class="col-cabecera">
         <span class="col-etiqueta">{{ 'admin.contactos' | translate }}</span>
@@ -54,7 +54,6 @@
                [class.expandida]="contactoExpandido === contacto.id"
                (click)="toggleExpandir(contacto)">
 
-            <!-- Estado + tiempo + chevron -->
             <div class="fila-top">
               <span class="indicador-estado"
                     [class.ind-pendiente]="!contacto.open"
@@ -76,16 +75,11 @@
               </svg>
             </div>
 
-            <!-- Nombre grande + preview truncada en la misma línea -->
             <div class="fila-mid">
               <span class="fila-nombre">{{ contacto.name }}</span>
               <span class="fila-preview">{{ contacto.msg }}</span>
             </div>
-
-            <!-- Email debajo -->
             <div class="fila-email">{{ contacto.email }}</div>
-
-            <!-- Expandido -->
             @if(contactoExpandido === contacto.id){
               <div class="fila-expandida">
                 <p class="msg-completo">{{ contacto.msg }}</p>
@@ -105,7 +99,6 @@
       </div>
     </div>
 
-    <!-- VISITANTES -->
     <div class="columna columna--visitantes">
       <div class="col-cabecera">
         <span class="col-etiqueta">{{ 'admin.visitantes' | translate }}</span>
@@ -127,7 +120,7 @@
 
         @for(visita of visitasOrdenadas(); track visita.id){
           <div class="fila-visitante">
-            <div class="vis-avatar">{{ visita.name ? visita.name[0].toUpperCase() : '?' }}</div>
+            <div class="vis-avatar">{{ visita.name ? visita.name[0] : '?' | uppercase }}</div>
             <div class="vis-datos">
               <span class="vis-nombre">{{ visita.name }}</span>
               <span class="vis-fecha">{{ visita.date ? (visita.date | timeAgo) : '' }} · {{ visita.date | date:'short' }}</span>

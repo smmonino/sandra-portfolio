@@ -25,11 +25,8 @@ export class ProyectosComponent {
   proyectos: Proyecto[]=[];
 
   get proyectosFiltrados(): Proyecto[] {
-    if (!this.tech.trim()) return this.proyectos;
     return this.proyectos.filter(p =>
-      p.techs.some(t => t.toLowerCase().includes(this.tech.toLowerCase())) ||
-      p.name.toLowerCase().includes(this.tech.toLowerCase()) ||
-      p.desc.toLowerCase().includes(this.tech.toLowerCase())
+      p.techs.some(t => t.toLowerCase().includes(this.tech.toLowerCase())) 
     );
   }
 }

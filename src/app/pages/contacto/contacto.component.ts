@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormBuilder, FormsModule} from '@angular/forms';
 import { Router } from '@angular/router';
 import { Location, UpperCasePipe } from '@angular/common';
 import { Contacto } from '../../models/models.model';
@@ -19,11 +19,15 @@ export class ContactoComponent {
   email: string = '';
   tlfn:string = '';
   mensaje: string = '';
+
   router = inject(Router);
   location = inject(Location);
   enviando = false;
+  
   snackBar =  inject(MatSnackBar);
   contactosService = inject(ContactosService);
+
+
   enviar() {
     if (this.nombre && this.email && this.mensaje) {
        this.enviando = true;
@@ -62,8 +66,8 @@ export class ContactoComponent {
     }
   }
 
-  resetForm(form: any) {
-    form.resetForm();
+  resetForm() {
+    
     this.nombre = '';
     this.email = '';
     this.mensaje = '';
@@ -71,6 +75,15 @@ export class ContactoComponent {
 
   volverAtras() {
     this.location.back();
+  }
+
+  ngAfterViewInit(){
+    gsap.fromTo('.modal-box',{opacity:0, scale: 0},{
+      opacity:1,
+      scale:1,
+      duration: 1,
+      ease: 'back.inOut'
+    })
   }
 
 }

@@ -4,17 +4,19 @@ import { signal  } from '@angular/core';
 import { ContactosService } from '../../services/contactos.service';
 
 import { VisitantesService } from '../../services/visitantes.service';
-import { DatePipe} from '@angular/common';
+import { DatePipe, UpperCasePipe} from '@angular/common';
 import { TimeAgoPipe } from '../../pipes/time-ago.pipe';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-admin',
-  imports: [DatePipe, TimeAgoPipe, TranslateModule],
+  imports: [DatePipe, TimeAgoPipe, TranslateModule, UpperCasePipe],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.scss'
 })
 export class AdminComponent {
+
+
   contactosService = inject(ContactosService);
   visitantesService = inject(VisitantesService);
 

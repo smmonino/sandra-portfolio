@@ -96,7 +96,7 @@ export class HomeComponent {
     this.visible = (this.visible - 1 + this.proyectos.length) % this.proyectos.length;
   }
 
-  irA(index: number) {
+  cambiarTarjeta(index: number) {
     this.visible = index;
   }
 
