@@ -1,4 +1,3 @@
-// Botón volver arriba a la izquierda
 .btn-volver {
   position: absolute;
   top: 24px;
@@ -83,7 +82,6 @@ main::after{
   gap: 1.5rem;
 }
 
-/* Opcional: ajuste responsive */
 @media (max-width: 768px) {
   .cabecera {
     flex-direction: column;

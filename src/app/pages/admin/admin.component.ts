@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { Contacto, Visitante } from '../../models/models.model';
-import { Signal, signal,  } from '@angular/core';
+import { signal  } from '@angular/core';
 import { ContactosService } from '../../services/contactos.service';
-import { toSignal } from '@angular/core/rxjs-interop';
+
 import { VisitantesService } from '../../services/visitantes.service';
 import { DatePipe} from '@angular/common';
 import { TimeAgoPipe } from '../../pipes/time-ago.pipe';
@@ -22,8 +22,6 @@ export class AdminComponent {
   visitas = signal<Visitante[]>([]);
 
   contactoExpandido: number | null = null;
-
-
 
   constructor(){
     this.cargarContactos();
@@ -59,7 +57,6 @@ export class AdminComponent {
   visitasOrdenadas(){
     return [...this.visitas()].sort((a, b) => new Date(b.date!).getTime()).reverse();
   }
-
 
   toggleExpandir(contacto: any): void {
     if (this.contactoExpandido === contacto.id) {

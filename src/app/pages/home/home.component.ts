@@ -1,5 +1,4 @@
 import { Component, ElementRef, inject, QueryList, ViewChildren } from '@angular/core';
-import { ModalComponent } from '../../components/modal/modal.component';
 import { RouterModule } from '@angular/router';
 import { gsap } from 'gsap';
 import { NgClass, UpperCasePipe } from '@angular/common';
@@ -16,13 +15,11 @@ gsap.registerPlugin(ScrollTrigger);
   selector: 'app-home',
   standalone: true,
   imports: [
-    ModalComponent,
     RouterModule,
     UpperCasePipe,
     TarjetaCarrouselComponent,
     NgClass,
     TranslateModule,
-    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -54,11 +51,9 @@ export class HomeComponent {
   ngAfterViewInit() {
     this.animarPortada();
     this.animarTarjeta();
-    //this.animarTecnologias();
-    
 
   }
-   private animarPortada(){
+  private animarPortada(){
       gsap.from('.titulo-persona, .titulo, .hero-desc, .container-botones', {
       y: 30,
       opacity: 0,
@@ -104,6 +99,5 @@ export class HomeComponent {
   irA(index: number) {
     this.visible = index;
   }
-
 
 }

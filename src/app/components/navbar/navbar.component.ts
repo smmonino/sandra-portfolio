@@ -6,7 +6,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { RouterModule,  Router,  } from '@angular/router';
 
 import { TranslateModule,TranslateService } from '@ngx-translate/core';
-import { ModalComponent } from '../modal/modal.component';
 import { UserService } from '../../services/user.service';
 @Component({
   selector: 'app-navbar',

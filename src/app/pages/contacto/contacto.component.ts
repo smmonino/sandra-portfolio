@@ -27,7 +27,6 @@ export class ContactoComponent {
   enviar() {
     if (this.nombre && this.email && this.mensaje) {
        this.enviando = true;
-    // Espera a que la vista se actualice y la barra esté en el DOM
     setTimeout(() => {
         const barra = document.getElementById('barra-envio');
         if (barra) {
@@ -43,10 +42,9 @@ export class ContactoComponent {
               this.mensaje = '';
             }
           });
-
         }
     });
-      const contacto = {
+      const contacto: Contacto = {
         name: this.nombre,
         email: this.email,
         msg: this.mensaje,
@@ -60,7 +58,6 @@ export class ContactoComponent {
       });
 
     } else {
-        // Aquí deberías mostrar un snackbar en vez de alert
         this.snackBar.open('Por favor, rellena todos los campos', 'Cerrar', {duration: 3000, })
     }
   }

@@ -9,11 +9,11 @@ app-navbar {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px; // la altura REAL del nav
+  height: 64px; 
   z-index: 1000;
 }
 
 .app-main {
   flex: 1;
-  padding-top: 64px; // 👈 espacio para el navbar
+  padding-top: 64px;
 }

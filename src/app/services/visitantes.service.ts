@@ -8,8 +8,8 @@ import { Visitante } from '../models/models.model';
 export class VisitantesService {
   private apiURL = 'https://qtldwiiujibwafsvrnzf.supabase.co/rest/v1/visita';
   private apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0bGR3aWl1amlid2Fmc3ZybnpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2NzcxNjYsImV4cCI6MjA5MjI1MzE2Nn0.E7bkqmJMtmvI3MYTGwAy3_9WB7boC4YGZEHbvVQjFYQ';
+ 
   http: HttpClient = inject(HttpClient);
-  constructor() { }
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -18,10 +18,6 @@ export class VisitantesService {
       'Content-Type': 'application/json'
     })
   };
-
-  private dbURL = 'http://localhost:3000/visitantes';
-  
-
 
   getVisitantes(){
     return this.http.get<Visitante[]>(this.apiURL, this.httpOptions);

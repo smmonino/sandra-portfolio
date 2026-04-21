@@ -1,8 +1,8 @@
-import { Router } from '@angular/router';
-import { Component, NgModule, inject } from '@angular/core';
+
+import { Component,  inject } from '@angular/core';
 import { TarjetaCarrouselComponent } from '../../components/tarjeta-carrousel/tarjeta-carrousel.component';
 import { Proyecto } from '../../models/models.model';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProyectosService } from '../../services/proyectos.service';
 
